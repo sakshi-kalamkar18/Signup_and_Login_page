@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:8080/YUserAuthAPP/signup.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Sign Up</title>
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .signup-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .signup-container img.logo {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  .signup-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .checkbox-container input {
+    margin-right: 8px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7e5f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #eb6a4e;
+  }
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+  <img class="logo" src="./Sign Up_files/847969.png" alt="Logo">
+  <h2>Join Us</h2>
+  <form action="http://localhost:8080/YUserAuthAPP/RegisterServlet" method="post">
+    <input type="text" name="fullname" placeholder="Full Name" required="">
+    <input type="email" name="email" placeholder="Email" required="">
+    <input type="password" name="password" placeholder="Password" required="">
+    <input type="password" name="confirmPassword" placeholder="Confirm Password" required="">
+    
+    <div class="checkbox-container">
+      <input type="checkbox" required="">
+      <label>I agree to the <a href="http://localhost:8080/YUserAuthAPP/signup.jsp#">terms and conditions</a></label>
+    </div>
+    
+    <button type="submit">Create Account</button>
+  </form>
+</div>
+
+
+
+</body></html>
